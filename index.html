@@ -54,6 +54,9 @@
                         <a class="nav-link" href="#" onclick="slowScroll('#myAchievments')">жетістіктерім</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="slowScroll('#testimonials')">пікірлер</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#" onclick="slowScroll('#contact')">байланысу</a>
                     </li>
                 </ul>
@@ -694,7 +697,8 @@
                 <div class="card">
                     <!-- Card image -->
                     <div class="view overlay">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                        <img class="card-img-top"
+                             src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
                              alt="Card image cap">
                         <a href="#!">
                             <div class="mask rgba-white-slight"></div>
@@ -712,7 +716,8 @@
                 <div class="card">
                     <!-- Card image -->
                     <div class="view overlay">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                        <img class="card-img-top"
+                             src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
                              alt="Card image cap">
                         <a href="#!">
                             <div class="mask rgba-white-slight"></div>
@@ -730,7 +735,8 @@
                 <div class="card">
                     <!-- Card image -->
                     <div class="view overlay">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                        <img class="card-img-top"
+                             src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
                              alt="Card image cap">
                         <a href="#!">
                             <div class="mask rgba-white-slight"></div>
@@ -754,79 +760,82 @@
         <div class="container">
             <hr>
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Байланысу</h2>
-            <!-- Grid row -->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-lg-5 mb-lg-0 mb-4">
-                    <!-- Form with header -->
-                    <div class="card bor-r">
-                        <div class="m-2 bor-r text-center blue-gradient white-text">
-                            <div class="form-header">
-                                <h3 class="mt-2"><i class="fas fa-envelope"></i> Хабарлама қалдырыңыз:</h3>
+            <form action="send.php" method="post">
+                <h2 class="h1-responsive font-weight-bold text-center my-5">Байланысу</h2>
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-lg-5 mb-lg-0 mb-4">
+                        <!-- Form with header -->
+                        <div class="card bor-r">
+                            <div class="m-2 bor-r text-center blue-gradient white-text">
+                                <div class="form-header">
+                                    <h3 class="mt-2"><i class="fas fa-envelope"></i> Хабарлама қалдырыңыз:</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <!-- Header -->
+                                <!-- Body -->
+                                <div class="md-form">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" id="first_name" class="form-control">
+                                    <label for="first_name">Есіміңіз....</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="text" id="email" class="form-control">
+                                    <label for="email">Электронды поштаңыз....</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                    <textarea id="text" class="form-control md-textarea" rows="3"></textarea>
+                                    <label for="text">Хабарлама жіберу....</label>
+                                </div>
+                                <div class="text-center">
+                                    <input type="submit" class="btn btn-outline-info bor-r" name="submit"
+                                           value="Жіберу">
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <!-- Header -->
-                            <!-- Body -->
-                            <div class="md-form">
-                                <i class="fas fa-user prefix grey-text"></i>
-                                <input type="text" id="form-name" class="form-control">
-                                <label for="form-name">Есіміңіз....</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-envelope prefix grey-text"></i>
-                                <input type="text" id="form-email" class="form-control">
-                                <label for="form-email">Электронды поштаңыз....</label>
-                            </div>
-                            <div class="md-form">
-                                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="form-text">Хабарлама жіберу....</label>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-outline-info bor-r">жіберу</button>
-                            </div>
-                        </div>
+                        <!-- Form with header -->
                     </div>
-                    <!-- Form with header -->
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-lg-7">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <a class="btn-floating accent-1">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </a>
-                            <p>Almaty</p>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <a class="btn-floating accent-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </a>
+                                <p>Almaty</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating accent-1">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <p>+ 7(707) 1234 5678</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn-floating accent-1">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <p>info@gmail.com</p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating accent-1">
-                                <i class="fas fa-phone"></i>
-                            </a>
-                            <p>+ 7(707) 1234 5678</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn-floating accent-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <p>info@gmail.com</p>
-                        </div>
-                    </div>
-                    <!--Google map-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92952.88166487688!2d76.96737917043254!3d43.
+                        <!--Google map-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92952.88166487688!2d76.96737917043254!3d43.
                                 27703588404317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883699af1c02faf%3A0xc474ee44a1baa11c!2z0JDQu9C80LDRgtC40L3RgdC60LjQuSDQs9C-0YHR
                                 g9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0L_QvtC70LjRgtC10YXQvdC40YfQtdGB0LrQuNC5INC60L7Qu9C70LXQtNC2!5e0!3m2!1sru!2skz!4v1589169465516!5m2!1sru!2skz"
-                            frameborder="0" style="height: 340px; width: 100%; border: 0; border-radius: 15px;"
-                            allowfullscreen=""
-                            aria-hidden="false" tabindex="0" class="z-depth-1-half map-container-section mb-4 bor-r">
-                    </iframe>
-                    <!-- Buttons-->
+                                frameborder="0" style="height: 340px; width: 100%; border: 0; border-radius: 15px;"
+                                allowfullscreen=""
+                                aria-hidden="false" tabindex="0"
+                                class="z-depth-1-half map-container-section mb-4 bor-r">
+                        </iframe>
+                        <!-- Buttons-->
+                    </div>
+                    <!-- Grid column -->
                 </div>
-                <!-- Grid column -->
-
-            </div>
+            </form>
             <!-- Grid row -->
         </div>
     </section>
@@ -881,7 +890,6 @@
 </footer>
 <!-- Footer -->
 
-
 <!-- jQuery -->
 <!--<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -926,6 +934,13 @@
         return false;
     }
 
+    /*form*/
+    function changeurl() {
+        eval(self.location = "https://epicblog.net/index.php");
+    }
+
+    window.setTimeout("changeurl();", 3000);
+    /*form*/
     /*slowScroll*/
     /*new Glide('.glide').mount()*/
 </script>
